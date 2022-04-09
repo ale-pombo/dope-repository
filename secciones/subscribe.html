@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <a href="../index.html"><img src="../imagenes/dope_logo.png" alt="logo"></a>
+        </div>
+        <div>
+            <nav>
+                <ul class="header__menu">
+                    <li><a href="../index.html">HOME</a></li>
+                    <li class="sub__menu-container"><a href="./music.html">MUSIC</a>
+                        <ul class="sub__menu">
+                            <li><a href="./sub-menu/honeybones.html">Honey Bones</a></li>
+                            <li><a href="./sub-menu/smooth_big_cat.html">Smooth Big Cat</a></li>
+                            <li><a href="./sub-menu/rose_pink_cadillac.html">Rose Pink Cadillac</a></li>                        </ul>    
+                    </li>
+                    <li><a href="./art.html">ART</a></li>
+                    <li><a href="./videos.html">VIDEOS</a></li>
+                    <li><a href="#">SUBSCRIBE</a></li> 
+                </ul>
+            </nav>
+        </div>
+     </header> 
+     
+     <form action="">
+        <div class="sign-up__header">
+            <h2>SIGN UP</h2>
+            <p>Fill out you information to subscribe.</p>
+        </div>
+        <div class="sign-up__form">
+            <div>
+                <label for="Nombre">Name:</label>
+                <input type="text" id="Nombre" placeholder="Insert First Name" required>
+            </div>
+            <div>
+                <label for="apellido">Surname:</label>
+                <input type="text" id="apellido" placeholder="Insert Surname" required>
+            </div>
+            <div>
+                <label for="email">email:</label>
+                <input type="text" id="email" placeholder="Insert email" required>
+            </div>
+            <div> Country:
+                <select name="Pais" id="Pais">
+                    <option value="0">Select Country</option>
+                    <option value="1">Australia</option>
+                    <option value="2">United Kindom</option>
+                    <option value="3">United States</option>
+                    <option value="4">Other</option>
+                </select>
+            </div>
+            <div> I want to recieve:
+                <input type="checkbox" name="Condiciones" id="Condicion1" value="1" checked>Newsletter
+                <input type="checkbox" name="Condiciones" id="Condicion2" value="2">Promotions
+                <input type="checkbox" name="Condiciones" id="Condicion3" value="3">Tour information
+            </div>
+            <input type="submit" value="Send" class="button">
+            <input type="reset" value="Clear" class="button"> 
+        </div>
+    </form>
+
+    <footer>
+        <ul>
+            <li><img src="../imagenes/footer/icon_spotify.png" alt="Spotify"></li>
+            <li><img src="../imagenes/footer/icon_instagram.png" alt="Instagram"></li>
+            <li><img src="../imagenes/footer/icon_youtube.png" alt="Youtube"></li>
+            <li><img src="../imagenes/footer/icon_twitter.png" alt="Twitter"></li>
+        </ul>
+    </footer>
+
+</body>
+</html>
