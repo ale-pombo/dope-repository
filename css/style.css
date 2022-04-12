@@ -120,8 +120,8 @@ footer ul li i:hover {
     align-items: center;
 }
 .article1__video iframe {
-    width: 500px;
-    height: 280px;
+    width: 550px;
+    height: 320px;
 }
 .article1__text {
     width: 270px;
@@ -143,6 +143,10 @@ footer ul li i:hover {
 .texto-dope {
     color: #f7f029;
     font-weight: bold;
+}
+.btn-group-lg>.btn, .btn-lg {
+    padding: 2px 10px;
+    font-size: 1rem;
 }
 
 /*css paginas sub-menu*/
@@ -192,15 +196,18 @@ footer ul li i:hover {
     }
 }
 .tracklist ol {
-    list-style: none
+    list-style: none;
+    padding: 0;
 }
 .tracklist ol li ul {
     display: flex;
     justify-content: space-between;
+    padding: 0;
 }
 .tracklist ol li ul li {
     list-style: none;
     line-height: 28px;
+    a;
 }
 
 /*css art*/
