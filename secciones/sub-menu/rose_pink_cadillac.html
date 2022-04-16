@@ -7,6 +7,7 @@
     <title>Rose Pink Cadillac</title>
     <link rel="shortcut icon" href="../../imagenes/logo_limon.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
@@ -17,7 +18,7 @@
     <header class="header">
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
-              <a class="navbar-brand header__logo" href="#"><img src="../../imagenes/dope_logo.png" alt="logo"></a>
+              <a class="navbar-brand header__logo" href="../../index.html"><img src="../../imagenes/dope_logo.png" alt="logo"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -49,7 +50,7 @@
         </nav>
      </header> 
      <div class="flex__layout">
-        <div class="album">
+        <div data-aos="fade-right">
             <div class="flex__album">
                 <div class="album__data">
                     <img src="../../imagenes/album/rose_pink_cadillac.jpeg" alt="album cover">
@@ -128,7 +129,7 @@
                 </div>
             </div>
         </div>
-        <div class="vinyl">
+        <div class="vinyl" data-aos="fade-left">
              <img src="../../imagenes/album/rose_pink_cadillac_vinyl.png" alt="vinyl">
         </div>
         </div>
@@ -141,6 +142,10 @@
         </ul>
     </footer>
     
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
