@@ -1,0 +1,32 @@
+/*CSS VIDEO */ 
+
+@import "var";
+
+.body__video {
+    background-color: #000000;
+    background-image: none;
+}
+.header{
+    & &__video{
+        padding: 0 20px;
+        font-family: $fontBase;
+        z-index: 100;
+    } 
+}
+.carousel-item {
+    iframe {
+        width: 100vw;
+        height: 100vh;
+    }
+}
+.footer__video {
+    ul {
+        li {
+            color: $colorBase;
+            font-size: 1.5rem;
+            &:hover {
+            color: $colorPrincipal;
+            }
+        }
+    }
+}

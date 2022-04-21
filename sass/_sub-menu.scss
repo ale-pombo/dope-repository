@@ -1,0 +1,71 @@
+/* CSS SUB-MENU */
+
+@import "var";
+
+.flex {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 150px;
+        margin: 25px auto;
+        justify-content: center;
+        align-items: center;
+    & &__album {
+        background-color: $transparencias;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        &--data {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            h2 {
+                font-weight: bold;
+                margin: 10px 0;  
+            }
+            ul {
+                list-style: none;
+                font-size: 0.8rem;
+                margin: 0;
+                padding: 0;
+            }
+            img {
+                width: 250px;
+            }
+        }
+        &--tracklist {
+            ol {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                li {
+                    ul {
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 0;
+                        li {
+                            list-style: none;
+                            line-height: 1.8rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    & &__vinyl {
+        img{
+            width: 450px;
+            &:hover {
+                animation: rotation 2.5s infinite linear;
+            }
+        }
+    }
+}
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}

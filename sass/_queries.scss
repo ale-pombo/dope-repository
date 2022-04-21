@@ -1,0 +1,119 @@
+/*MEDIA QUERIES - pendiente de modificar */ 
+
+@import "var";
+
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 85%;
+        line-height: 85%;
+    }    
+    .article1 {
+        gap: 10px;
+        &__video {
+            iframe {
+                width: 400px;
+        height: 225px;
+            }
+        }
+        &__text {
+            p {
+                padding-right: 18px;
+                margin: 2px;
+            }
+        }
+    }
+    /*.albums {
+        img {
+            width: 250px;
+        }
+    }*/
+}
+
+@media only screen and (max-width: 576px) {
+    html {
+        font-size: 80%;
+        line-height: 80%;
+    }  
+    .header {
+        padding: 5;
+        & &__video {
+            position: relative;
+        }
+        & &__logo {
+            img {
+                width: 200px;
+            }
+        }
+    }
+    
+    .navbar-dark .navbar-nav .nav-link {
+        color: #ffffff;
+        margin: 0 15px;
+    }
+    .dropdown-item {
+        color: #ffffff;
+    }
+    .navbar-toggler {
+        padding: 0.2rem;
+    }
+    .navbar-toggler-icon {
+        width: 1.2rem;
+        height: 1.2rem;
+        justify-content: start;
+    }
+    .main__text {
+        height: 180px;
+        overflow: auto;
+    }
+    .main__text h1 {
+        padding: 4px;
+        position: sticky;
+        top: 0;
+    }
+    .main__text p {
+        padding: 0 25px;
+    }
+    .article-1 {
+        margin: 0px auto 10px;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .article1__video iframe {
+        width: 290px;
+        height: 164px;
+    }
+    .article1__text {
+        padding: 0 5px;
+        text-align: center;
+    }
+    .article1__text p {
+        padding: 0 10px;
+        margin-right: 0;
+    }
+    .flex__layout {
+        gap: 15px;
+    }
+    .album__data {
+        flex-direction: column;
+        align-items: center;
+    }
+    .album__data-text h2 {
+        margin: 0;
+    }
+    .vinyl img {
+        width: 300px;
+    }
+    .img-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    form {
+        margin: 20px auto;
+        padding: 5px 10px;
+    }
+    .sign-up__form input[type="checkbox"] {
+        margin-bottom: 10px;
+    }
+    footer ul li {
+        margin: 5px;
+    }
+}

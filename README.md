@@ -6,3 +6,4 @@ Version 0.1 - Primer subida a GitHub
 Version 0.2 - Creacion de rama "animaciones" y merge con la rama main
 Version 0.3 - Se añaden componentes de bootstrap
 Version 0.4 - Actualización con correcciones para pre-entrega
+Version 0.5 - Creacción y compilado de archivo SASS 

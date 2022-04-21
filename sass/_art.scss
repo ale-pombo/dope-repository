@@ -1,0 +1,19 @@
+/*CSS ART */ 
+
+@import "var";
+
+.img-container {
+    display: grid;
+    margin: 10px;
+    gap: 14px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: all 0.5s;
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+}

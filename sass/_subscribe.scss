@@ -1,0 +1,39 @@
+/*CSS SUBSCRIBE */ 
+
+@import "var";
+
+form {
+    margin: 30px auto;
+    padding: 10px 20px;
+    background-color: $transparencias;
+    width: fit-content;
+    font-family: $fontBase;
+    border-radius: 7px;
+    .sign-up__header {
+        text-align: center;
+        padding: 5px 0;
+        h2 {
+            font-weight: bold;
+        }
+    }
+    .sign-up__form {
+        font-size: 1rem;
+        input[type="text"], select {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 15px;
+            font-size: 1rem
+        }
+    }
+    .sign-up__form input[type="checkbox"] {
+        margin-bottom: 15px;
+        font-size: 1rem;
+    }
+    .button {
+        width: 25%;
+        margin: 10px;
+        padding: 5px;
+        background-color: $colorBase;
+        font-family: $fontBase;
+    }
+}
