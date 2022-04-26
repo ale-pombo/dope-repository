@@ -2,6 +2,13 @@
 
 @import "var";
 
+$colores: (
+    base: #ffffff,
+    principal: #fd579c,
+    secundario: #ffdd44,
+    oscuro: #000000,
+);
+
 .banner {
     img {
         width: 100%;
@@ -11,15 +18,12 @@
 .main-text {
      display: inline-block;
     h1 {
-        background-color: $colorBase;
+        @extend %h1;
+        background-color: map-get($map:$colores , $key: base);
         padding: 0.4rem;
-        color: #000;
-        font: {
-            family: $fontBase;
-            style: italic;
-            size: 2rem;
-        }
+        color: map-get($map:$colores , $key: oscuro);;
         text-align: center;
+        font-style: italic;
         z-index: 1;
     }
     p {
@@ -33,10 +37,10 @@
         }
     }
     &__link {
-        color: $colorBase;
+        color: map-get($map:$colores , $key: base);;
     }
     &__dope {
-        color: $colorSecundario;
+        color: map-get($map:$colores , $key: secundario);;
         font-weight: bold;
     }
 }

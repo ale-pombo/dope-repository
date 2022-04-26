@@ -1,5 +1,10 @@
 // VARIABLES //
 
+@mixin sizes ($width, $height: $width) {
+    width: $width;
+    height: $height;
+}
+
 $colorBase: #ffffff;
 $colorPrincipal: #fd579c;
 $colorSecundario: #ffdd44;

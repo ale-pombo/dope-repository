@@ -12,8 +12,13 @@ form {
     .sign-up__header {
         text-align: center;
         padding: 5px 0;
-        h2 {
-            font-weight: bold;
+        h1 {
+            @extend %h1;
+            color: $colorPrincipal;
+        }
+        p {
+            max-width: 500px;
+            margin-bottom: 0;
         }
     }
     .sign-up__form {
@@ -24,16 +29,29 @@ form {
             margin-bottom: 15px;
             font-size: 1rem
         }
-    }
-    .sign-up__form input[type="checkbox"] {
-        margin-bottom: 15px;
-        font-size: 1rem;
-    }
-    .button {
-        width: 25%;
-        margin: 10px;
-        padding: 5px;
-        background-color: $colorBase;
-        font-family: $fontBase;
+        input[type="checkbox"] {
+            margin-bottom: 15px;
+            font-size: 1rem;
+        }
+        .form-buttons {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .button {
+                width: 50%;
+                margin: 5px auto;
+                padding: 5px;
+                background-color: $colorBase;
+                color: $colorPrincipal;
+                font: {
+                    family: $fontBase;
+                    size: 1rem
+                }
+                &:hover {
+                    background-color: $colorPrincipal;
+                    color: $colorBase;
+                }
+            }
+        }
     }
 }

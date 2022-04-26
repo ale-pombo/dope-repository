@@ -12,6 +12,11 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+body .main-text h1, .main-text body h1, body .flex .flex__album--data h1, .flex .flex__album--data body h1, body form .sign-up__header h1, form .sign-up__header body h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+}
+
 body h2 {
   font-family: "Poppins", sans-serif;
   font-weight: lighter;
@@ -90,11 +95,9 @@ footer ul li:hover {
 .main-text h1 {
   background-color: #ffffff;
   padding: 0.4rem;
-  color: #000;
-  font-family: "Poppins", sans-serif;
-  font-style: italic;
-  font-size: 2rem;
+  color: #000000;
   text-align: center;
+  font-style: italic;
   z-index: 1;
 }
 
@@ -185,7 +188,7 @@ footer ul li:hover {
   align-items: center;
 }
 
-.flex .flex__album--data h2 {
+.flex .flex__album--data h1 {
   font-weight: bold;
   margin: 10px 0;
 }
@@ -218,12 +221,31 @@ footer ul li:hover {
   line-height: 1.8rem;
 }
 
+.flex .flex__vinyl {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
 .flex .flex__vinyl img {
   width: 450px;
 }
 
 .flex .flex__vinyl img:hover {
   animation: rotation 2.5s infinite linear;
+}
+
+.flex .flex__vinyl .btn-dark {
+  width: 150px;
+  border: none;
+  padding: 5px 10px;
+  font-size: 1.2rem;
+}
+
+.flex .flex__vinyl .btn-dark:hover {
+  background-color: #ffffff;
+  color: #fd579c;
 }
 
 @keyframes rotation {
@@ -260,10 +282,18 @@ footer ul li:hover {
   background-image: none;
 }
 
-.header .header__video {
+.header__video {
   padding: 0 20px;
   font-family: "Poppins", sans-serif;
   z-index: 100;
+  position: relative;
+  text-align: center;
+}
+
+.titulo h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  text-align: center;
 }
 
 .carousel-item iframe {
@@ -295,8 +325,13 @@ form .sign-up__header {
   padding: 5px 0;
 }
 
-form .sign-up__header h2 {
-  font-weight: bold;
+form .sign-up__header h1 {
+  color: #fd579c;
+}
+
+form .sign-up__header p {
+  max-width: 500px;
+  margin-bottom: 0;
 }
 
 form .sign-up__form {
@@ -315,15 +350,28 @@ form .sign-up__form input[type="checkbox"] {
   font-size: 1rem;
 }
 
-form .button {
-  width: 25%;
-  margin: 10px;
-  padding: 5px;
-  background-color: #ffffff;
-  font-family: "Poppins", sans-serif;
+form .sign-up__form .form-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-/*MEDIA QUERIES - pendiente de modificar */
+form .sign-up__form .form-buttons .button {
+  width: 50%;
+  margin: 5px auto;
+  padding: 5px;
+  background-color: #ffffff;
+  color: #fd579c;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+
+form .sign-up__form .form-buttons .button:hover {
+  background-color: #fd579c;
+  color: #ffffff;
+}
+
+/* CSS MEDIA QUERIES */
 @media only screen and (max-width: 768px) {
   html {
     font-size: 85%;
@@ -340,11 +388,6 @@ form .button {
     padding-right: 18px;
     margin: 2px;
   }
-  /*.albums {
-        img {
-            width: 250px;
-        }
-    }*/
 }
 
 @media only screen and (max-width: 576px) {
@@ -361,13 +404,6 @@ form .button {
   .header .header__logo img {
     width: 200px;
   }
-  .navbar-dark .navbar-nav .nav-link {
-    color: #ffffff;
-    margin: 0 15px;
-  }
-  .dropdown-item {
-    color: #ffffff;
-  }
   .navbar-toggler {
     padding: 0.2rem;
   }
@@ -376,46 +412,45 @@ form .button {
     height: 1.2rem;
     justify-content: start;
   }
-  .main__text {
+  .main-text {
     height: 180px;
     overflow: auto;
   }
-  .main__text h1 {
+  .main-text h1 {
     padding: 4px;
     position: sticky;
     top: 0;
   }
-  .main__text p {
+  .main-text p {
     padding: 0 25px;
   }
-  .article-1 {
+  .article1 {
     margin: 0px auto 10px;
     flex-direction: column;
     gap: 5px;
   }
-  .article1__video iframe {
+  .article1 .article1__video iframe {
     width: 290px;
     height: 164px;
   }
-  .article1__text {
+  .article1 .article1__text {
     padding: 0 5px;
     text-align: center;
   }
-  .article1__text p {
+  .article1 .article1__text p {
     padding: 0 10px;
     margin-right: 0;
   }
-  .flex__layout {
+  .flex {
     gap: 15px;
   }
-  .album__data {
+  .flex .flex__album--data {
     flex-direction: column;
-    align-items: center;
   }
-  .album__data-text h2 {
+  .flex .flex__album--data h1 {
     margin: 0;
   }
-  .vinyl img {
+  .flex .flex__vinyl img {
     width: 300px;
   }
   .img-container {
@@ -425,7 +460,7 @@ form .button {
     margin: 20px auto;
     padding: 5px 10px;
   }
-  .sign-up__form input[type="checkbox"] {
+  form .sign-up__form input[type="checkbox"] {
     margin-bottom: 10px;
   }
   footer ul li {

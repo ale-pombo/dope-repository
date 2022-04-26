@@ -1,4 +1,4 @@
-/*MEDIA QUERIES - pendiente de modificar */ 
+/* CSS MEDIA QUERIES */
 
 @import "var";
 
@@ -22,11 +22,6 @@
             }
         }
     }
-    /*.albums {
-        img {
-            width: 250px;
-        }
-    }*/
 }
 
 @media only screen and (max-width: 576px) {
@@ -45,63 +40,56 @@
             }
         }
     }
-    
-    .navbar-dark .navbar-nav .nav-link {
-        color: #ffffff;
-        margin: 0 15px;
-    }
-    .dropdown-item {
-        color: #ffffff;
-    }
+
     .navbar-toggler {
         padding: 0.2rem;
+            &-icon {
+                width: 1.2rem;
+                height: 1.2rem;
+                justify-content: start;
+            }
     }
-    .navbar-toggler-icon {
-        width: 1.2rem;
-        height: 1.2rem;
-        justify-content: start;
-    }
-    .main__text {
+    .main-text {
         height: 180px;
         overflow: auto;
+        h1 {
+            padding: 4px;
+            position: sticky;
+            top: 0;
+        }
+        p {
+            padding: 0 25px;
+        }
     }
-    .main__text h1 {
-        padding: 4px;
-        position: sticky;
-        top: 0;
-    }
-    .main__text p {
-        padding: 0 25px;
-    }
-    .article-1 {
+    .article1 {
         margin: 0px auto 10px;
         flex-direction: column;
         gap: 5px;
+        & &__video
+            iframe {
+                width: 290px;
+                height: 164px;
+        }
+        & &__text {
+            padding: 0 5px;
+            text-align: center;
+            p {
+                padding: 0 10px;
+                margin-right: 0;
+            }
+        }
     }
-    .article1__video iframe {
-        width: 290px;
-        height: 164px;
-    }
-    .article1__text {
-        padding: 0 5px;
-        text-align: center;
-    }
-    .article1__text p {
-        padding: 0 10px;
-        margin-right: 0;
-    }
-    .flex__layout {
+    .flex {
         gap: 15px;
-    }
-    .album__data {
-        flex-direction: column;
-        align-items: center;
-    }
-    .album__data-text h2 {
-        margin: 0;
-    }
-    .vinyl img {
-        width: 300px;
+        & &__album--data {
+            flex-direction: column;
+            h1 {
+                margin: 0;
+            }
+        }
+        & &__vinyl img {
+            width: 300px;
+        }
     }
     .img-container {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -109,11 +97,18 @@
     form {
         margin: 20px auto;
         padding: 5px 10px;
+        .sign-up__form {
+            input[type="checkbox"] {
+                margin-bottom: 10px;
+            }
+        }
     }
-    .sign-up__form input[type="checkbox"] {
-        margin-bottom: 10px;
-    }
-    footer ul li {
-        margin: 5px;
+
+    footer {
+        ul {
+            li {
+                margin: 5px;
+            }
+        }
     }
 }
