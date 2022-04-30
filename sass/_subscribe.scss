@@ -13,7 +13,6 @@ form {
         text-align: center;
         padding: 5px 0;
         h1 {
-            @extend %h1;
             color: $colorPrincipal;
         }
         p {

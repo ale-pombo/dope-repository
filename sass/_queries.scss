@@ -9,13 +9,13 @@
     }    
     .article1 {
         gap: 10px;
-        &__video {
+        & &__video {
             iframe {
                 width: 400px;
-        height: 225px;
+                height: 225px;
             }
         }
-        &__text {
+        & &__text {
             p {
                 padding-right: 18px;
                 margin: 2px;
@@ -105,6 +105,7 @@
     }
 
     footer {
+        flex-direction: column-reverse;
         ul {
             li {
                 margin: 5px;

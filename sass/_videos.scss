@@ -32,10 +32,12 @@
 .footer__video {
     ul {
         li {
-            color: $colorBase;
             font-size: 1.5rem;
-            &:hover {
-            color: $colorPrincipal;
+            i {
+                color: $colorBase;
+                &:hover {
+                color: $colorPrincipal;
+                }
             }
         }
     }

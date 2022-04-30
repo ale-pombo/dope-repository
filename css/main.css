@@ -12,7 +12,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-body .main-text h1, .main-text body h1, body .flex .flex__album--data h1, .flex .flex__album--data body h1, body form .sign-up__header h1, form .sign-up__header body h1 {
+body h1 {
   font-family: "Poppins", sans-serif;
   font-size: 2rem;
 }
@@ -67,19 +67,35 @@ body h2 {
 
 footer {
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
+  align-items: center;
   padding: 0.3rem;
 }
 
+footer p {
+  margin: 0;
+}
+
+footer ul {
+  margin: 0;
+}
+
 footer ul li {
-  color: #000;
   list-style: none;
   display: inline;
   font-size: 1.8rem;
   margin: 0.6rem;
 }
 
-footer ul li:hover {
+footer ul li a {
+  text-decoration: none;
+}
+
+footer ul li a i {
+  color: #000;
+}
+
+footer ul li a i:hover {
   color: #ffffff;
 }
 
@@ -270,10 +286,39 @@ footer ul li:hover {
   height: 100%;
   object-fit: cover;
   transition: all 0.5s;
+  cursor: pointer;
 }
 
 .img-container img:hover {
   transform: scale(1.05);
+}
+
+.modal {
+  background-color: #000000b2;
+}
+
+.modal .modal-content {
+  background-color: rgba(255, 127, 80, 0);
+}
+
+.modal .modal-content .modal-body {
+  padding: 0;
+  justify-content: center;
+}
+
+.modal .modal-content .modal-body button {
+  position: relative;
+  top: 3rem;
+  right: 1rem;
+  width: 100%;
+  border-width: 0;
+  background-color: rgba(255, 127, 80, 0);
+  font-size: 2rem;
+  text-align: right;
+}
+
+.modal .modal-content .modal-body img {
+  width: 100%;
 }
 
 /*CSS VIDEO */
@@ -302,11 +347,14 @@ footer ul li:hover {
 }
 
 .footer__video ul li {
-  color: #ffffff;
   font-size: 1.5rem;
 }
 
-.footer__video ul li:hover {
+.footer__video ul li i {
+  color: #ffffff;
+}
+
+.footer__video ul li i:hover {
   color: #fd579c;
 }
 
@@ -380,11 +428,11 @@ form .sign-up__form .form-buttons .button:hover {
   .article1 {
     gap: 10px;
   }
-  .article1__video iframe {
+  .article1 .article1__video iframe {
     width: 400px;
     height: 225px;
   }
-  .article1__text p {
+  .article1 .article1__text p {
     padding-right: 18px;
     margin: 2px;
   }
@@ -462,6 +510,9 @@ form .sign-up__form .form-buttons .button:hover {
   }
   form .sign-up__form input[type="checkbox"] {
     margin-bottom: 10px;
+  }
+  footer {
+    flex-direction: column-reverse;
   }
   footer ul li {
     margin: 5px;

@@ -18,7 +18,6 @@ $colores: (
 .main-text {
      display: inline-block;
     h1 {
-        @extend %h1;
         background-color: map-get($map:$colores , $key: base);
         padding: 0.4rem;
         color: map-get($map:$colores , $key: oscuro);;

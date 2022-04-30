@@ -13,8 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">    <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
     <header class="header">
@@ -44,7 +43,7 @@
                 <a class="nav-link" href="./videos.html">VIDEOS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./subscribe.html" target="_blank">SUBSCRIBE</a>
+                <a class="nav-link" href="./subscribe.html">SUBSCRIBE</a>
               </li>
             </ul>
           </div>
@@ -53,52 +52,529 @@
   </header> 
 
   <div class="img-container">
-    <img class="animate__animated animate__zoomIn animate__slow" src="../imagenes/art/angus_art.jpg" alt="angus painting">
-    <img class="animate__animated animate__zoomIn animate__slow" src="../imagenes/art/cat_women.jpg" alt="cat women">
-    <img class="animate__animated animate__zoomIn animate__slow" src="../imagenes/art/lemon_vinyl.jpg" alt="vinyl">
-    <img class="animate__animated animate__zoomIn animate__slow" src="../imagenes/art/rose_pink_cadillac.jpg" alt="rose pink cadillac">
-    <img class="animate__animated animate__zoomIn animate__slow" src="../imagenes/art/dope_characters.jpg" alt="characters">
-    <img class="animate__animated animate__zoomIn animate__slow" src="../imagenes/art/lemon_squeeze.jpg" alt="squeeze that lemon">
-    <img class="animate__animated animate__zoomIn animate__slow" src="../imagenes/art/lemon_pink_cadillac.jpg" alt="cadillac lemon">
-    <img class="animate__animated animate__zoomIn animate__slow" src="../imagenes/art/roller_lemon.jpg" alt="rollers">
-    <img class="animate__animated animate__zoomIn animate__slow" src="../imagenes/art/stingray_pete.jpg" alt="stingray pete">
-    <img class="animate__animated animate__zoomIn animate__slow" src="../imagenes/art/pink_art.jpg" alt="rainbow art">
-    <img class="animate__animated animate__zoomIn animate__slow" src="../imagenes/art/fuck_things_up.jpg" alt="lyrics">
-    <img class="animate__animated animate__zoomIn animate__slow" src="../imagenes/art/mandala_lemon.jpg" alt="mandala">
-    <img class="animate__animated animate__zoomIn animate__slow" src="../imagenes/art/high_lemon.jpg" alt="high lemon">
-    <img class="animate__animated animate__zoomIn animate__slow" src="../imagenes/art/cowboy_lemon.jpg" alt="cowbow lemon">
-    <img class="animate__animated animate__zoomIn animate__slow" src="../imagenes/art/love_the_way_you_roll.jpg" alt="roll lyrics">
-    <img class="animate__animated animate__zoomIn animate__slow" src="../imagenes/art/drinking_cat.jpg" alt="drinking cat">
-    <img class="animate__animated animate__zoomIn animate__slow" src="../imagenes/art/angus_and_winston.jpg" alt="winston and angus">
-    <img class="animate__animated animate__zoomIn animate__slow" src="../imagenes/art/rainbow_guitar.jpg" alt="rainbow">
-    <img class="animate__animated animate__zoomIn animate__slow" src="../imagenes/art/smooth_big_cat.jpg" alt="smooth big cat">
-    <img class="animate__animated animate__zoomIn animate__slow" src="../imagenes/art/honey_bones_eye.jpg" alt="honey bones">
-    <img class="animate__animated animate__zoomIn animate__slow" src="../imagenes/art/rose_pink_cadillac_glitter.jpg" alt="lemon glitter car">
-    <img class="animate__animated animate__zoomIn animate__slow" src="../imagenes/art/dope_collage.jpg" alt="collage">
-    <img class="animate__animated animate__zoomIn animate__slow" src="../imagenes/art/lemon_glasses.jpg" alt="lemon with glasses">
-    <img class="animate__animated animate__zoomIn animate__slow" src="../imagenes/art/sink_your_tiger_teeth.jpg" alt="cadillac lyrics">
-    <img class="animate__animated animate__zoomIn animate__slow" src="../imagenes/art/lemon_horserider.jpg" alt="horserider lemon">
-    <img class="animate__animated animate__zoomIn animate__slow" src="../imagenes/art/flying_cadillac.jpg" alt="cadillac">
-    <img class="animate__animated animate__zoomIn animate__slow" src="../imagenes/art/motorcycle.jpg" alt="motorcycle wolf">
-    <img class="animate__animated animate__zoomIn animate__slow" src="../imagenes/art/smooth_big_cat_cover.jpg" alt="smooth big cat cover">
-    <img class="animate__animated animate__zoomIn animate__slow" src="../imagenes/art/cadillac_keys.jpg" alt="cadillac keys">
-    <img class="animate__animated animate__zoomIn animate__slow" src="../imagenes/art/lemon_with_swag.jpg" alt="lemon with swag">
-    <img class="animate__animated animate__zoomIn animate__slow" src="../imagenes/art/lemon_tattoo.jpg" alt="lemon tattoo">
-    <img class="animate__animated animate__zoomIn animate__slow" src="../imagenes/art/dope_worry.jpg" alt="dope worry">
-    <img class="animate__animated animate__zoomIn animate__slow" src="../imagenes/art/dope_shoes.jpg" alt="dope shoes">
-    <img class="animate__animated animate__zoomIn animate__slow" src="../imagenes/art/mushrooms.jpg" alt="mushrooms">
+    <img class="animate__animated animate__zoomIn animate__slow" src="../imagenes/art/angus_art.jpg" alt="angus painting" data-bs-toggle="modal" data-bs-target="#modalImage-01">
+    <img class="animate__animated animate__zoomIn animate__slow" src="../imagenes/art/cat_women.jpg" alt="cat women" data-bs-toggle="modal" data-bs-target="#modalImage-02">
+    <img class="animate__animated animate__zoomIn animate__slow" src="../imagenes/art/lemon_vinyl.jpg" alt="vinyl" data-bs-toggle="modal" data-bs-target="#modalImage-03">
+    <img class="animate__animated animate__zoomIn animate__slow" src="../imagenes/art/rose_pink_cadillac.jpg" alt="rose pink cadillac" data-bs-toggle="modal" data-bs-target="#modalImage-04">
+    <img class="animate__animated animate__zoomIn animate__slow" src="../imagenes/art/dope_characters.jpg" alt="characters" data-bs-toggle="modal" data-bs-target="#modalImage-05">
+    <img class="animate__animated animate__zoomIn animate__slow" src="../imagenes/art/lemon_squeeze.jpg" alt="squeeze that lemon" data-bs-toggle="modal" data-bs-target="#modalImage-06">
+    <img class="animate__animated animate__zoomIn animate__slow" src="../imagenes/art/lemon_pink_cadillac.jpg" alt="cadillac lemon" data-bs-toggle="modal" data-bs-target="#modalImage-07">
+    <img class="animate__animated animate__zoomIn animate__slow" src="../imagenes/art/roller_lemon.jpg" alt="rollers" data-bs-toggle="modal" data-bs-target="#modalImage-08">
+    <img class="animate__animated animate__zoomIn animate__slow" src="../imagenes/art/stingray_pete.jpg" alt="stingray pete" data-bs-toggle="modal" data-bs-target="#modalImage-09">
+    <img class="animate__animated animate__zoomIn animate__slow" src="../imagenes/art/pink_art.jpg" alt="rainbow art" data-bs-toggle="modal" data-bs-target="#modalImage-10">
+    <img class="animate__animated animate__zoomIn animate__slow" src="../imagenes/art/fuck_things_up.jpg" alt="lyrics" data-bs-toggle="modal" data-bs-target="#modalImage-11">
+    <img class="animate__animated animate__zoomIn animate__slow" src="../imagenes/art/mandala_lemon.jpg" alt="mandala" data-bs-toggle="modal" data-bs-target="#modalImage-12">
+    <img class="animate__animated animate__zoomIn animate__slow" src="../imagenes/art/high_lemon.jpg" alt="high lemon" data-bs-toggle="modal" data-bs-target="#modalImage-13">
+    <img class="animate__animated animate__zoomIn animate__slow" src="../imagenes/art/cowboy_lemon.jpg" alt="cowbow lemon" data-bs-toggle="modal" data-bs-target="#modalImage-14">
+    <img class="animate__animated animate__zoomIn animate__slow" src="../imagenes/art/love_the_way_you_roll.jpg" alt="roll lyrics" data-bs-toggle="modal" data-bs-target="#modalImage-15">
+    <img class="animate__animated animate__zoomIn animate__slow" src="../imagenes/art/drinking_cat.jpg" alt="drinking cat" data-bs-toggle="modal" data-bs-target="#modalImage-16">
+    <img class="animate__animated animate__zoomIn animate__slow" src="../imagenes/art/angus_and_winston.jpg" alt="winston and angus" data-bs-toggle="modal" data-bs-target="#modalImage-17">
+    <img class="animate__animated animate__zoomIn animate__slow" src="../imagenes/art/rainbow_guitar.jpg" alt="rainbow" data-bs-toggle="modal" data-bs-target="#modalImage-18">
+    <img class="animate__animated animate__zoomIn animate__slow" src="../imagenes/art/smooth_big_cat.jpg" alt="smooth big cat" data-bs-toggle="modal" data-bs-target="#modalImage-19">
+    <img class="animate__animated animate__zoomIn animate__slow" src="../imagenes/art/honey_bones_eye.jpg" alt="honey bones" data-bs-toggle="modal" data-bs-target="#modalImage-20">
+    <img class="animate__animated animate__zoomIn animate__slow" src="../imagenes/art/rose_pink_cadillac_glitter.jpg" alt="lemon glitter car" data-bs-toggle="modal" data-bs-target="#modalImage-21">
+    <img class="animate__animated animate__zoomIn animate__slow" src="../imagenes/art/dope_collage.jpg" alt="collage" data-bs-toggle="modal" data-bs-target="#modalImage-22">
+    <img class="animate__animated animate__zoomIn animate__slow" src="../imagenes/art/lemon_glasses.jpg" alt="lemon with glasses" data-bs-toggle="modal" data-bs-target="#modalImage-23">
+    <img class="animate__animated animate__zoomIn animate__slow" src="../imagenes/art/sink_your_tiger_teeth.jpg" alt="cadillac lyrics" data-bs-toggle="modal" data-bs-target="#modalImage-24">
+    <img class="animate__animated animate__zoomIn animate__slow" src="../imagenes/art/lemon_horserider.jpg" alt="horserider lemon" data-bs-toggle="modal" data-bs-target="#modalImage-25">
+    <img class="animate__animated animate__zoomIn animate__slow" src="../imagenes/art/flying_cadillac.jpg" alt="cadillac" data-bs-toggle="modal" data-bs-target="#modalImage-26">
+    <img class="animate__animated animate__zoomIn animate__slow" src="../imagenes/art/motorcycle.jpg" alt="motorcycle wolf" data-bs-toggle="modal" data-bs-target="#modalImage-27">
+    <img class="animate__animated animate__zoomIn animate__slow" src="../imagenes/art/smooth_big_cat_cover.jpg" alt="smooth big cat cover" data-bs-toggle="modal" data-bs-target="#modalImage-28">
+    <img class="animate__animated animate__zoomIn animate__slow" src="../imagenes/art/cadillac_keys.jpg" alt="cadillac keys" data-bs-toggle="modal" data-bs-target="#modalImage-29">
+    <img class="animate__animated animate__zoomIn animate__slow" src="../imagenes/art/lemon_with_swag.jpg" alt="lemon with swag" data-bs-toggle="modal" data-bs-target="#modalImage-30">
+    <img class="animate__animated animate__zoomIn animate__slow" src="../imagenes/art/lemon_tattoo.jpg" alt="lemon tattoo" data-bs-toggle="modal" data-bs-target="#modalImage-31">
+    <img class="animate__animated animate__zoomIn animate__slow" src="../imagenes/art/dope_worry.jpg" alt="dope worry" data-bs-toggle="modal" data-bs-target="#modalImage-32">
+    <img class="animate__animated animate__zoomIn animate__slow" src="../imagenes/art/dope_shoes.jpg" alt="dope shoes" data-bs-toggle="modal" data-bs-target="#modalImage-33">
+    <img class="animate__animated animate__zoomIn animate__slow" src="../imagenes/art/mushrooms.jpg" alt="mushrooms" data-bs-toggle="modal" data-bs-target="#modalImage-34">
+  </div>
+
+
+<!-- MODAL 1 -->
+  <div class="modal" id="modalImage-01" tabindex="-1" role="dialog" aria-labelledby="modalImage-01Label" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <img src="../imagenes/art/angus_art.jpg" alt="angus painting">
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- MODAL 2 -->
+  <div class="modal" id="modalImage-02" tabindex="-1" role="dialog" aria-labelledby="modalImage-02Label" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <img src="../imagenes/art/cat_women.jpg" alt="cat women">
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+<!-- MODAL 3 -->
+  <div class="modal" id="modalImage-03" tabindex="-1" role="dialog" aria-labelledby="modalImage-03Label" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <img src="../imagenes/art/lemon_vinyl.jpg" alt="vinyl">
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+<!-- MODAL 4 -->
+  <div class="modal" id="modalImage-04" tabindex="-1" role="dialog" aria-labelledby="modalImage-04Label" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <img src="../imagenes/art/rose_pink_cadillac.jpg" alt="rose pink cadillac">
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+<!-- MODAL 5 -->
+  <div class="modal" id="modalImage-05" tabindex="-1" role="dialog" aria-labelledby="modalImage-05Label" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <img src="../imagenes/art/dope_characters.jpg" alt="characters">
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+<!-- MODAL 6 -->
+  <div class="modal" id="modalImage-06" tabindex="-1" role="dialog" aria-labelledby="modalImage-06Label" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <img src="../imagenes/art/lemon_squeeze.jpg" alt="squeeze that lemon">
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+<!-- MODAL 7 -->
+  <div class="modal" id="modalImage-07" tabindex="-1" role="dialog" aria-labelledby="modalImage-07Label" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <img src="../imagenes/art/lemon_pink_cadillac.jpg" alt="cadillac lemon">
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+<!-- MODAL 8 -->
+  <div class="modal" id="modalImage-08" tabindex="-1" role="dialog" aria-labelledby="modalImage-08Label" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <img src="../imagenes/art/roller_lemon.jpg" alt="rollers">
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+<!-- MODAL 9 -->
+  <div class="modal" id="modalImage-09" tabindex="-1" role="dialog" aria-labelledby="modalImage-09Label" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <img src="../imagenes/art/stingray_pete.jpg" alt="stingray pete">
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+<!-- MODAL 10 -->
+  <div class="modal" id="modalImage-10" tabindex="-1" role="dialog" aria-labelledby="modalImage-10Label" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <img src="../imagenes/art/pink_art.jpg" alt="rainbow art">
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+<!-- MODAL 11 -->
+  <div class="modal" id="modalImage-11" tabindex="-1" role="dialog" aria-labelledby="modalImage-11Label" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <img src="../imagenes/art/fuck_things_up.jpg" alt="lyrics">
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+<!-- MODAL 12 -->
+  <div class="modal" id="modalImage-12" tabindex="-1" role="dialog" aria-labelledby="modalImage-12Label" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <img src="../imagenes/art/mandala_lemon.jpg" alt="mandala">
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+<!-- MODAL 13 -->
+  <div class="modal" id="modalImage-13" tabindex="-1" role="dialog" aria-labelledby="modalImage-13Label" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <img src="../imagenes/art/high_lemon.jpg" alt="high lemon">
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+<!-- MODAL 14 -->
+  <div class="modal" id="modalImage-14" tabindex="-1" role="dialog" aria-labelledby="modalImage-14Label" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <img src="../imagenes/art/cowboy_lemon.jpg" alt="cowbow lemon">
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+<!-- MODAL 15 -->
+  <div class="modal" id="modalImage-15" tabindex="-1" role="dialog" aria-labelledby="modalImage-15Label" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <img src="../imagenes/art/love_the_way_you_roll.jpg" alt="roll lyrics">
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+<!-- MODAL 16 -->
+  <div class="modal" id="modalImage-16" tabindex="-1" role="dialog" aria-labelledby="modalImage-16Label" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <img src="../imagenes/art/drinking_cat.jpg" alt="drinking cat">
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+<!-- MODAL 17 -->
+  <div class="modal" id="modalImage-17" tabindex="-1" role="dialog" aria-labelledby="modalImage-17Label" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <img src="../imagenes/art/angus_and_winston.jpg" alt="winston and angus">
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+<!-- MODAL 18 -->
+  <div class="modal" id="modalImage-18" tabindex="-1" role="dialog" aria-labelledby="modalImage-18Label" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <img src="../imagenes/art/rainbow_guitar.jpg" alt="rainbow">
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+<!-- MODAL 19 -->
+  <div class="modal" id="modalImage-19" tabindex="-1" role="dialog" aria-labelledby="modalImage-19Label" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <img src="../imagenes/art/smooth_big_cat.jpg" alt="smooth big cat">
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+<!-- MODAL 20 -->
+  <div class="modal" id="modalImage-20" tabindex="-1" role="dialog" aria-labelledby="modalImage-20Label" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <img src="../imagenes/art/honey_bones_eye.jpg" alt="honey bones">
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+<!-- MODAL 21 -->
+  <div class="modal" id="modalImage-21" tabindex="-1" role="dialog" aria-labelledby="modalImage-21Label" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <img src="../imagenes/art/rose_pink_cadillac_glitter.jpg" alt="lemon glitter car">
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+<!-- MODAL 22 -->
+  <div class="modal" id="modalImage-22" tabindex="-1" role="dialog" aria-labelledby="modalImage-22Label" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <img src="../imagenes/art/dope_collage.jpg" alt="collage">
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+<!-- MODAL 23 -->
+  <div class="modal" id="modalImage-23" tabindex="-1" role="dialog" aria-labelledby="modalImage-23Label" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <img src="../imagenes/art/lemon_glasses.jpg" alt="lemon with glasses">
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+<!-- MODAL 24 -->
+  <div class="modal" id="modalImage-24" tabindex="-1" role="dialog" aria-labelledby="modalImage-24Label" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <img src="../imagenes/art/sink_your_tiger_teeth.jpg" alt="cadillac lyrics">
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+<!-- MODAL 25 -->
+  <div class="modal" id="modalImage-25" tabindex="-1" role="dialog" aria-labelledby="modalImage-25Label" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <img src="../imagenes/art/lemon_horserider.jpg" alt="horserider lemon">
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+<!-- MODAL 26 -->
+  <div class="modal" id="modalImage-26" tabindex="-1" role="dialog" aria-labelledby="modalImage-26Label" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <img src="../imagenes/art/flying_cadillac.jpg" alt="cadillac">
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- MODAL 27 -->
+  <div class="modal" id="modalImage-27" tabindex="-1" role="dialog" aria-labelledby="modalImage-27Label" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <img src="../imagenes/art/motorcycle.jpg" alt="motorcycle wolf">
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- MODAL 28 -->
+  <div class="modal" id="modalImage-28" tabindex="-1" role="dialog" aria-labelledby="modalImage-28Label" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <img src="../imagenes/art/smooth_big_cat_cover.jpg" alt="smooth big cat cover">
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- MODAL 29 -->
+  <div class="modal" id="modalImage-29" tabindex="-1" role="dialog" aria-labelledby="modalImage-29Label" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <img src="../imagenes/art/cadillac_keys.jpg" alt="cadillac keys">
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- MODAL 30 -->
+  <div class="modal" id="modalImage-30" tabindex="-1" role="dialog" aria-labelledby="modalImage-30Label" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <img src="../imagenes/art/lemon_with_swag.jpg" alt="lemon with swag">
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- MODAL 31 -->
+  <div class="modal" id="modalImage-31" tabindex="-1" role="dialog" aria-labelledby="modalImage-31Label" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <img src="../imagenes/art/lemon_tattoo.jpg" alt="lemon tattoo">
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- MODAL 32 -->
+  <div class="modal" id="modalImage-32" tabindex="-1" role="dialog" aria-labelledby="modalImage-32Label" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <img src="../imagenes/art/dope_worry.jpg" alt="dope worry">
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- MODAL 33 -->
+  <div class="modal" id="modalImage-33" tabindex="-1" role="dialog" aria-labelledby="modalImage-33Label" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <img src="../imagenes/art/dope_shoes.jpg" alt="dope shoes">
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- MODAL 34 -->
+  <div class="modal" id="modalImage-34" tabindex="-1" role="dialog" aria-labelledby="modalImage-34Label" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <img src="../imagenes/art/mushrooms.jpg" alt="mushrooms">
+        </div>
+      </div>
+    </div>
   </div>
  
   <footer>
     <ul>
-      <li><i class="bi bi-spotify"></i></li>
-      <li><i class="bi bi-instagram"></i></li>
-      <li><i class="bi bi-youtube"></i></li>
-      <li><i class="bi bi-twitter"></i></li>
+      <li> <a href="https://open.spotify.com/artist/7oZLKL1GjYiaAgssXsLmW8" target="_blank"><i class="bi bi-spotify"></i></a></li>
+      <li> <a href="https://www.instagram.com/dopelemonmusic/?hl=en" target="_blank"><i class="bi bi-instagram"></i></a></li>
+      <li> <a href="https://www.youtube.com/channel/UCZ2Zs-OchH843UvJNZKecww" target="_blank"><i class="bi bi-youtube"></i></a></li>
+      <li> <a href="https://twitter.com/dopelemonmusic" target="_blank"><i class="bi bi-twitter"></i></a></li>
     </ul>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>

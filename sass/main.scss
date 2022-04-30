@@ -15,7 +15,7 @@ body {
     }
     color: $colorBase;
     font-family: Arial, Helvetica, sans-serif;
-    %h1 {
+    h1 {
         font: {
             family: $fontBase;
             size: 2rem;
@@ -71,17 +71,28 @@ body {
 
 footer {
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
+    align-items: center;
     padding: 0.3rem;
+    p {
+        margin: 0;
+    }
     ul {
+        margin: 0;
         li {
-            color: #000;
             list-style: none;
             display: inline;
             font-size: 1.8rem;
             margin: 0.6rem;
-            &:hover {
-                color: $colorBase;
+            a {
+                text-decoration: none;
+                i {
+                    color: #000;
+                    &:hover {
+                        color: $colorBase;
+                    }
+                    
+                }
             }
         }
     }

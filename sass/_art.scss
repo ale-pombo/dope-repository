@@ -11,8 +11,33 @@
         @include sizes (100%);
         object-fit: cover;
         transition: all 0.5s;
+        cursor: pointer;
         &:hover {
             transform: scale(1.05);
         }
     }
+}
+.modal {
+    background-color: #000000b2;   
+    .modal-content {
+        background-color: rgba(255, 127, 80, 0);
+        .modal-body {
+            padding: 0;
+            justify-content: center;
+            button {
+                position: relative;
+                top: 3rem;
+                right: 1rem;
+                width: 100%;
+                border-width: 0;
+                background-color: rgba(255, 127, 80, 0);
+                font-size: 2rem;
+                text-align: right;
+                }
+            img {
+                width: 100%;
+            }
+        }
+    }
+
 }
