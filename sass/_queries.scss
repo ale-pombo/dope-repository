@@ -16,8 +16,10 @@
             }
         }
         & &__text {
+            h2 {
+                margin-bottom: 0;
+            }
             p {
-                padding-right: 18px;
                 margin: 2px;
             }
         }
@@ -26,8 +28,8 @@
 
 @media only screen and (max-width: 576px) {
     html {
-        font-size: 80%;
-        line-height: 80%;
+        font-size: 75%;
+        line-height: 75%;
     }  
     .header {
         padding: 5;
@@ -36,7 +38,7 @@
         }
         & &__logo {
             img {
-                width: 200px;
+                width: 210px;
             }
         }
     }
@@ -107,6 +109,7 @@
     footer {
         flex-direction: column-reverse;
         ul {
+            padding: 0;
             li {
                 margin: 5px;
             }

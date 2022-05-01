@@ -8,3 +8,4 @@ Version 0.3 - Se añaden componentes de bootstrap
 Version 0.4 - Actualización con correcciones para pre-entrega
 Version 0.5 - Creacción y compilado de archivo SASS 
 Version 0.6 - Se agregan propiedades en SASS y se aplica SEO
+Version 0.7 - Actualización con nuevos botones y modals para tercera entrega
