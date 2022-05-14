@@ -521,8 +521,11 @@ form .sign-up__form input[type="text"], form .sign-up__form select {
   font-size: 1rem;
 }
 
-form .sign-up__form input[type="checkbox"] {
-  margin-bottom: 15px;
+form .sign-up__form ul {
+  list-style: none;
+}
+
+form .sign-up__form ul input[type="checkbox"] {
   font-size: 1rem;
 }
 
@@ -635,7 +638,8 @@ form .sign-up__form .form-buttons .button:hover {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
   form {
-    margin: 20px auto;
+    width: 300px;
+    margin: 30px auto 15px;
     padding: 5px 10px;
   }
   form .sign-up__form input[type="checkbox"] {

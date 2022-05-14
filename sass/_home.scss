@@ -2,17 +2,6 @@
 
 @import "var";
 
-$colores: (
-    base: #ffffff,
-    principal: #fd579c,
-    secundario: #ffdd44,
-    oscuro: #000000,
-);
-
-@mixin transition($property: all, $duration: 0.45s, $ease: cubic-bezier(0.65,0,.076,1)) {
-  transition: $property $duration $ease;
-}
-
 .banner {
     img {
         width: 100%;
@@ -22,9 +11,9 @@ $colores: (
 .main-text {
      display: inline-block;
     h1 {
-        background-color: map-get($map:$colores , $key: base);
+        background-color: $colorBase;
         padding: 0.4rem;
-        color: map-get($map:$colores , $key: oscuro);;
+        color: $colorOscuro;
         text-align: center;
         font-style: italic;
         z-index: 1;
@@ -40,10 +29,10 @@ $colores: (
         }
     }
     &__link {
-        color: map-get($map:$colores , $key: base);;
+        color: $colorBase;
     }
     &__dope {
-        color: map-get($map:$colores , $key: secundario);;
+        color: $colorSecundario;
         font-weight: bold;
     }
 }

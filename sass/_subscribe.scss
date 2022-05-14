@@ -28,9 +28,11 @@ form {
             margin-bottom: 15px;
             font-size: 1rem
         }
-        input[type="checkbox"] {
-            margin-bottom: 15px;
-            font-size: 1rem;
+        ul {
+            list-style: none;
+            input[type="checkbox"] {
+                font-size: 1rem;
+            }
         }
         .form-buttons {
             display: flex;
